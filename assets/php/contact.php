@@ -19,7 +19,7 @@ $sendToEmail = 'to@example.com'; // Email address that will receive the message 
 $sendToName = 'To Name'; // Name that will receive the message with the output of the form
 
 // Subject
-$subject = 'Message from Sandbox contact form';
+$subject = 'Message from PCR Projects contact form';
 
 // Fields - Value of attribute name => Text to appear in the email
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message', 'department' => 'Department');
