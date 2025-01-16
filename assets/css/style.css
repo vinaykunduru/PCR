@@ -28453,7 +28453,7 @@ button:focus {
   transform: translateY(-0.15rem);
 }
 .social a:not(.btn-circle) i {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .social a:not([class*="link-"]):not(.btn-circle) .uil[class*="dropbox"] {
   color: #007bdf;
@@ -29024,7 +29024,7 @@ button:focus {
   a:not(.btn-circle):not([class*="link-"])
   uıy:hover
   i {
-  color: #fff !important;
+  color: #c38b2b !important;
 }
 .social > a {
   margin: 0 0.7rem 0 0;
