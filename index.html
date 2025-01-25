@@ -358,7 +358,7 @@
         <div class="container pb-14">
           <div class="row">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <h2 class="fs-16 text-uppercase text-line text-primary mb-3">
+              <h2 class="fs-16 text-uppercase text-primary mb-3">
                 Our Featured Projects
               </h2>
               <h3 class="display-4 mb-9">
@@ -490,7 +490,7 @@
         <div class="container pt-14 pt-md-16 pb-3">
           <div class="row">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <h2 class="fs-16 text-uppercase text-line text-primary mb-3">
+              <h2 class="fs-16 text-uppercase text-primary mb-3">
                 What We Offer
               </h2>
               <h3 class="display-4 mb-9">
@@ -600,7 +600,7 @@
             </div>
             <!--/column -->
             <div class="col-lg-5">
-              <h2 class="fs-16 text-uppercase text-line text-primary mb-3">
+              <h2 class="fs-16 text-uppercase text-primary mb-3">
                 Why Choose Us?
               </h2>
               <h3 class="display-4 mb-7">
@@ -718,7 +718,7 @@
         <div class="container py-18">
           <div class="row">
             <div class="col-lg-8">
-              <h2 class="fs-16 text-uppercase text-line text-white mb-3">
+              <h2 class="fs-16 text-uppercase text-white mb-3">
                 Ready to Start Your Real Estate Journey?
               </h2>
               <h3 class="display-4 mb-6 text-white pe-xxl-18">
@@ -740,7 +740,7 @@
         <div class="container py-14 py-md-16">
           <div class="row">
             <div class="col-lg-9 col-xl-8 col-xxl-7">
-              <h2 class="fs-16 text-uppercase text-line text-primary mb-3">
+              <h2 class="fs-16 text-uppercase text-primary mb-3">
                 Insights & Updates
               </h2>
               <h3 class="display-4 mb-9">
@@ -930,7 +930,7 @@
         <div class="container py-14 pt-md-17 pb-md-21">
           <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0 mb-2 align-items-end">
             <div class="col-lg-4">
-              <h2 class="fs-16 text-uppercase text-line text-primary mb-3">
+              <h2 class="fs-16 text-uppercase text-primary mb-3">
                 Company Facts
               </h2>
               <h3 class="display-4 mb-0 pe-xxl-15">
@@ -1218,6 +1218,117 @@
       </div>
       <!-- /.container -->
     </footer>
+    <style>
+      #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        right: 0;
+        width: 250px;
+        margin-top: 0;
+        transform: translateX(300px);
+        transition: transform 250ms ease-in-out;
+        background: linear-gradient(180deg, #fc466b 0%, #3f5efb 100%);
+      }
+      .sidebarMenuInner {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      input[type="checkbox"]:checked ~ #sidebarMenu {
+        transform: translateX(0);
+      }
+
+      input[type="checkbox"] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+      }
+      .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 9999;
+        height: 100%;
+        width: 100%;
+        top: 22px;
+        right: 10px;
+        height: 22px;
+        width: 22px;
+      }
+      .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: red;
+      }
+      .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+      }
+      .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+      }
+      .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+      }
+      input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+      }
+      input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+      }
+      input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+      }
+    </style>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div
+      id="sidebarMenu"
+      style="
+        height: 100%;
+        width: 300px;
+        background-color: #fff;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 9999;
+      "
+    >
+      <a
+        href="#"
+        class="btn"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal1"
+        >Apply Now</a
+      >
+    </div>
     <div class="progress-wrap">
       <svg
         class="progress-circle svg-content"
