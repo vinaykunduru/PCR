@@ -136,7 +136,7 @@ Author:		elemis
   --bs-telegram-alt: #2caef0;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 96, 105, 123;
+  --bs-body-color-rgb: 34, 34, 34;
   --bs-body-bg-rgb: 254, 254, 254;
   --bs-font-sans-serif: "Manrope", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
@@ -151,7 +151,7 @@ Author:		elemis
   --bs-body-font-size: 0.8rem;
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.7;
-  --bs-body-color: #60697b;
+  --bs-body-color: #333;
   --bs-body-bg: #fefefe;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -32969,7 +32969,7 @@ button.hamburger span {
   background: rgba(30, 34, 40, 0.3);
 }
 .swiper-slide.bg-overlay-400:before {
-  background: rgba(30, 34, 40, 0.4);
+  background: rgba(30, 34, 40, 0.5);
 }
 .swiper-slide.bg-overlay [class*="container"] > *,
 .swiper-slide.bg-overlay .caption-wrapper > * {
@@ -33242,7 +33242,7 @@ img.svg-inject {
 .icon-svg,
 .icon-svg.icon-svg-lg {
   width: 3rem;
-  height: 3rem;
+  height: auto;
 }
 .icon-svg.icon-svg-md {
   width: 2.6rem;
